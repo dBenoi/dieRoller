@@ -215,7 +215,7 @@ button:active {
   background-color: #e5e5e5;
   width: 7rem;
   height: 7rem;
-  margin: 0 auto;
+  margin: 30px auto;
   display: flex;
   justify-content: center;
   align-items: center;
