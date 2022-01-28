@@ -128,55 +128,78 @@ table {
   border-spacing: 0;
 }
 
+* {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+}
+
+body {
+  background-color: #0f0f0f;
+}
+
 .header {
-  background-color: brown;
-  display: flex;
+  font-family: "Open Sans", sans-serif;
+  background-color: #e5e5e5;
+  color: #0f0f0f;
   align-items: center;
-  font-size: 3em;
-  height: 10vh;
-  display: flex;
+  padding: 1rem;
+  border-radius: 0 0 15px 15px;
 }
 
 .pageTitle {
+  font-size: 4rem;
   flex: auto;
   text-align: center;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 main {
   display: flex;
   justify-content: center;
-  height: 90vh;
-  width: 100vw;
-  background-color: grey;
+  height: auto;
+  width: 80%;
+  margin: 40px auto;
 }
 
-.rollBox {
-  background-color: burlywood;
+.roll-box {
+  background-color: #fca311;
   text-align: center;
   width: auto;
+  padding: 3rem 5rem;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   align-self: center;
   justify-content: space-around;
-  height: 70vh;
-  border-radius: 10px;
+  height: auto;
+  border-radius: 15px;
   /*margin-top: 7em;
   margin-bottom: 15em;*/
 }
 
-h1 {
-  font-size: 3em;
+.rollem {
+  font-size: 4rem;
+  font-weight: 600;
 }
 
-button {
-  background-color: cyan;
+.dice {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.button {
+  background-color: #14213d;
+  color: #eeeeee;
   border: none;
   border-radius: 5px;
-  box-shadow: 5px 5px gray;
-  font-size: 1em;
-  width: 5em;
-  height: 3.5em;
+  box-shadow: 5px 5px #0f0f0f20;
+  font-size: 2rem;
+  font-weight: 500;
+  width: 7rem;
+  height: 7rem;
 }
 
 button:hover {
@@ -185,14 +208,19 @@ button:hover {
 
 button:active {
   transform: scale(0.95);
-  box-shadow: 4px 4px gray;
+  box-shadow: 4px 4px #0f0f0f20;
 }
 
-h2 {
-  font-size: 2.5em;
+.roll-container {
+  background-color: #e5e5e5;
+  width: 7rem;
+  height: 7rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #rolled {
-  font-size: 2em;
-  background-color: white;
+  font-size: 2rem;
 }
