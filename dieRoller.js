@@ -4,6 +4,7 @@ const d8 = document.querySelector('#d8');
 const d10 = document.querySelector('#d10');
 const d12 = document.querySelector('#d12');
 const d20 = document.querySelector('#d20');
+const die = document.querySelector('.button')
 const rollView = document.querySelector('#rolled');
 
 d4.onclick = function () {
@@ -36,5 +37,8 @@ d20.onclick = function () {
     rollView.innerHTML = `<h2>${roll}</h2>`
 }
 
+die.ontouchend = function () {
+    die.classList.remove('hasactive')
+}
 
 

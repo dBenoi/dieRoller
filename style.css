@@ -179,21 +179,24 @@ main {
 
 .rollem {
   font-size: 4rem;
-  font-weight: 600;
+  font-weight: 700;
   margin-bottom: 2.5rem;
 }
 
 .dice {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(6, 120px);
+  justify-content: center;
   align-items: center;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
   gap: 25px;
   margin-bottom: 2.5rem;
 }
 
 .button {
   background-color: #14213d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: #eeeeee;
   border: none;
   border-radius: 5px;
@@ -225,4 +228,27 @@ button:active {
 
 #rolled {
   font-size: 2rem;
+}
+
+@media screen and (max-width: 1165px) {
+  .dice {
+    grid-template-columns: repeat(3, 120px);
+    grid-template-rows: repeat(2, 120px);
+  }
+}
+
+@media screen and (max-width: 535px) {
+  .pageTitle {
+    font-size: 2.7rem;
+  }
+  .dice {
+    grid-template-columns: repeat(2, 100px);
+    grid-template-rows: repeat(3, 100px);
+  }
+  .rollem {
+    font-size: 2.6rem;
+  }
+  .button {
+    font-size: 2.4rem;
+  }
 }
